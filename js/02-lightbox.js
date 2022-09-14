@@ -1,5 +1,6 @@
 import { galleryItems } from './gallery-items.js';
 const listImg = document.querySelector(".gallery");
+let lightbox;
 createImgList(galleryItems, listImg);
 
 function createImgList(items, list) {
@@ -18,5 +19,4 @@ function createImgList(items, list) {
                 .join('');
         list.innerHTML = markup;
 }
-
- var lightbox = new SimpleLightbox('.gallery a', { captionPosition: 'bottom', captionDelay: 250 });
+lightbox = new SimpleLightbox('.gallery a', { captionPosition: 'bottom', captionDelay: 250 });
