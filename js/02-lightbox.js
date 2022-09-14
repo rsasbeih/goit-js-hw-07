@@ -19,14 +19,5 @@ function createImgList(items, list) {
                 .join('');
         list.innerHTML = markup;
 }
-function maximizePhoto(event) {
-        event.preventDefault();
-         lightbox = new SimpleLightbox('.gallery a', { captionPosition: 'bottom', captionDelay: 250 });
-}
-listImg.addEventListener("click", maximizePhoto);
 
-// document.addEventListener("keydown", (e) => {
-//         if (e.key === "Escape") {
-//                 // instance.close();
-//         }
-// });
+ lightbox = new SimpleLightbox('.gallery a', { captionPosition: 'bottom', captionDelay: 250 });
